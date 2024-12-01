@@ -51,19 +51,8 @@ document.getElementById('form').addEventListener('submit', function (e) {
           console.log('Respuesta del servidor:', xhr.responseText); // Depurar la respuesta del servidor
 
           if (xhr.status === 200) {
-              try {
-                  const response = JSON.parse(xhr.responseText); // Intenta interpretar como JSON
-                  if (response.success) { // Supongamos que el servidor envía {"success": true}
-                      alert(response.message || '¡Registro exitoso!'); // Muestra un mensaje desde el servidor
-                  } else {
-                      alert('Hubo un problema en el registro.');
-                  }
-              } catch (error) {
-                  // Si la respuesta no es JSON válido, asume que fue exitoso
-                  alert('¡Registro exitoso!');
-              }
-
-              form.reset(); // Limpiar los campos del formulario
+              alert('¡Registro exitoso!');
+              form.reset(); // Limpiar los campos del formulario después de la respuesta exitosa
               setFechaHoraActual(); // Restablecer la fecha y hora actual
           } else {
               alert('Error en el servidor. Código de estado: ' + xhr.status);
@@ -94,4 +83,3 @@ function verificarContraseña() {
       alert("Contraseña incorrecta");
   }
 }
-
