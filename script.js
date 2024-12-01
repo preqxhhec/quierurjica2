@@ -52,7 +52,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
 
           if (xhr.status === 200) {
               alert('¡Registro exitoso!');
-              form.reset(); // Limpiar los campos del formulario después de la respuesta exitosa
+              form.reset(); // Limpiar los campos del formulario
               setFechaHoraActual(); // Restablecer la fecha y hora actual
           } else {
               alert('Error en el servidor. Código de estado: ' + xhr.status);
