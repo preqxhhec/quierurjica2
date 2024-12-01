@@ -1,4 +1,4 @@
-body {
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
@@ -6,31 +6,139 @@ body {
     height: 100vh;
     background-color: #ffff;
     margin: 0;
-}
-
-h1 {
-    font-family: sans-serif;
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-}
-
-.form {
-    width: 700px;
-    padding: 10px;
-    border: 1px solid #333;
-    background-color: #f2f4f5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-}
-
-.BTN, .botonpwd {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px auto;
-    display: block;
-}
+    }
+    
+    h1{
+        font-family: sans-serif;
+        font-size: 20px;
+        font-style: italic;
+        width: auto;
+        text-align: center;
+    }
+    
+    h2{
+        font-family: sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        width: auto;
+        text-align: center;
+    }
+    
+    .form{
+    
+        width: 700px;
+        padding: 10px;
+        border: 1px solid #333;
+        background-color: #f2f4f5;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        border-radius: 8px;
+    
+    }
+    
+    .divFecha{
+        padding-bottom: 10px;
+        padding-right: 21px;
+        text-align: end;
+    }
+    
+    .selectEsp{
+        padding-left: 20px;
+    }
+    
+    .divNombreRut{
+        padding-bottom: 10px;
+        
+    }
+    
+    .divNombreRut{
+        padding-bottom: 10px;
+    }
+    .nombre{
+        width: 42%;
+    }
+    
+    .divDx{
+        padding-bottom: 10px;
+    }
+    
+    .dx{
+        width: 80%;
+    }
+    
+    .divCx{
+        padding-bottom: 10px;
+    }
+    
+    .cx{
+        width: 65%;
+    }
+    
+    .materiales{
+        display: inline-block;
+    }
+    
+    .ttmateriales{
+        width: 96%;
+        max-height: 125px;
+        overflow-y: hidden;
+        resize: none;
+    }
+    
+    
+    
+    
+    
+    
+    .img{
+    
+        width: 300px;
+       
+    
+    }
+    
+    .select{
+    display: inline-block;
+    padding-bottom: 15px;
+    
+    }
+    
+    
+    .BTN, .botonpwd{
+        width: auto;
+        margin: auto;
+        display: block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+    
+        .BTN:hover{
+            background-color: #005600;
+            }
+    
+        .botonpwd:hover{
+                background-color: #005600;
+                }
+    
+            
+        .botonpwd{
+            display: inline-block;
+        }
+    
+    .acceso{
+        width: auto;
+        padding: 10px;
+        border: 1px solid #333;
+        background-color: #f2f4f5;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        border-radius: 8px; 
+    }
+            .form{
+              
+                    display: none;
+                }
+                
+            
