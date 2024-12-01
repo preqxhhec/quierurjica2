@@ -62,7 +62,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
       // Manejo de errores de red
       xhr.onerror = function () {
         //  console.error('Error de red. No se pudo enviar el formulario.');
-          alert('Error de red. No se pudo enviar el formulario.');
+         // alert('Error de red. No se pudo enviar el formulario.');
       };
 
       // Enviar la solicitud
