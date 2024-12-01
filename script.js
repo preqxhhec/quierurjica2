@@ -66,12 +66,12 @@ document.getElementById('form').addEventListener('submit', function (e) {
       };
 
       // Enviar la solicitud
-      console.log('Enviando datos al servidor...');
-      xhr.send(formData);
-  } else {
-      console.log('El formulario no se envió porque hay campos vacíos.');
-  }
-});
+      //console.log('Enviando datos al servidor...');
+     // xhr.send(formData);
+  //} else {
+   //   console.log('El formulario no se envió porque hay campos vacíos.');
+  //}
+//});
 
 // Función para verificar la contraseña de acceso
 function verificarContraseña() {
