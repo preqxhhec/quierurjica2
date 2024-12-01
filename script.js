@@ -72,8 +72,10 @@ document.getElementById('form').addEventListener('submit', function (e) {
       console.log('El formulario no se envió porque hay campos vacíos.');
   }
 });
-
+// Limpia los campos del formulario
+    document.getElementById("formulario").reset();
 // Función para verificar la contraseña de acceso
+
 function verificarContraseña() {
   const password = document.getElementById("password").value;
   if (password === "Minsal") {
