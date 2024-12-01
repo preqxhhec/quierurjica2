@@ -52,7 +52,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
 
           if (xhr.status === 200) {
               alert('¡Registro exitoso!');
-              form.reset(); // Limpiar los campos del formulario
+              form.reset(); // Limpiar los campos del formulario después de la respuesta exitosa
               setFechaHoraActual(); // Restablecer la fecha y hora actual
           } else {
               alert('Error en el servidor. Código de estado: ' + xhr.status);
@@ -60,10 +60,10 @@ document.getElementById('form').addEventListener('submit', function (e) {
       };
 
       // Manejo de errores de red
-     // xhr.onerror = function () {
-          // console.error('Error de red. No se pudo enviar el formulario.');
-         // alert('Error de red. No se pudo enviar el formulario.');
-    //  };
+      xhr.onerror = function () {
+          console.error('Error de red. No se pudo enviar el formulario.');
+          alert('Error de red. No se pudo enviar el formulario.');
+      };
 
       // Enviar la solicitud
       console.log('Enviando datos al servidor...');
@@ -72,10 +72,8 @@ document.getElementById('form').addEventListener('submit', function (e) {
       console.log('El formulario no se envió porque hay campos vacíos.');
   }
 });
-// Limpia los campos del formulario
-    document.getElementById("formulario").reset();
-// Función para verificar la contraseña de acceso
 
+// Función para verificar la contraseña de acceso
 function verificarContraseña() {
   const password = document.getElementById("password").value;
   if (password === "Minsal") {
@@ -85,4 +83,3 @@ function verificarContraseña() {
       alert("Contraseña incorrecta");
   }
 }
-
